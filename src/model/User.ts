@@ -1,10 +1,10 @@
 export class User{
     constructor(
-    private id: string,
-    private name: string,
-    private email: string,
-    private password: string,
-    private role: UserRole
+        private id: string,
+        private name: string,
+        private email: string,
+        private password: string,
+        private role: string
     ){}
 
     getId(){
@@ -80,4 +80,12 @@ export interface LoginInputDTO{
 export enum UserRole{
     NORMAL = "NORMAL",
     ADMIN = "ADMIN"
+}
+
+export type user = {
+    id: string
+    email: string
+    password: string
+    name: string
+    role: string
 }
