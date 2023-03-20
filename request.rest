@@ -1,0 +1,29 @@
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "name": "Fulana", 
+    "email": "fulana@email.com" ,
+    "password": "teste1",
+    "role": "admin"
+}
+###
+
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email": "ciclano@email.com",
+    "password": "teste1"
+}
+
+###
+POST http://localhost:3000/band/createband
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzMzc0ODQ2LTA5ZTgtNDQyYi04MjMxLTcwZjU2NGEwZmNmMyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3OTI2MTc2MywiZXhwIjoxNjc5MjY1MzYzfQ.97gKIEhogx9ZoSwW1by80wg9DqXRGH0j9TfJGxR8WyE
+
+{
+    "name": "Panic", 
+    "music_genre": "Pop",
+    "responsible": "Fulano"
+}
